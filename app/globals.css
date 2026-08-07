@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Sora", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --bg: #eff3f6;
+  --ink: #0d1723;
+  --ink-2: #15293f;
+  --soft: #52627a;
+  --line: #d7e0e8;
+  --panel: #f8fbfd;
+  --brand: #1b8be0;
+  --brand-deep: #0f3b71;
+  --accent: #ff8f3f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% -8%, rgba(27, 139, 224, 0.22), transparent 38%),
+    radial-gradient(circle at 90% 16%, rgba(255, 143, 63, 0.14), transparent 28%),
+    var(--bg);
+  color: var(--ink);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: var(--brand);
+  color: #ffffff;
+}
+
+.hex-cut {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hex-corner {
+  clip-path: polygon(
+    0 12px, 12px 0, calc(100% - 12px) 0, 100% 12px,
+    100% calc(100% - 12px), calc(100% - 12px) 100%,
+    12px 100%, 0 calc(100% - 12px)
+  );
+}
+
+.glass {
+  background: linear-gradient(
+    128deg,
+    rgba(248, 251, 253, 0.84) 0%,
+    rgba(242, 247, 251, 0.72) 50%,
+    rgba(248, 251, 253, 0.52) 100%
+  );
+  border: 1px solid rgba(96, 125, 160, 0.18);
+  backdrop-filter: blur(16px);
+}
+
+.dot-grid {
+  background-image: radial-gradient(rgba(82, 98, 122, 0.2) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 36s linear infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: translateY(-50%) scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-50%) scale(1.06);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 6.5s ease-in-out infinite;
+}
+
+.animate-pulse-glow-delayed {
+  animation: pulse-glow 7.2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+@keyframes sheen-pass {
+  0% {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  18% {
+    opacity: 0.22;
+  }
+  55% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(110%);
+    opacity: 0;
+  }
+}
+
+.animate-sheen-pass {
+  animation: sheen-pass 8.5s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-drift {
+  animation: drift 7s ease-in-out infinite;
+}
+
+@keyframes spin-slow-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 55s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 42s linear infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-right.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-reverse,
+  .animate-pulse-glow,
+  .animate-pulse-glow-delayed,
+  .animate-sheen-pass,
+  .animate-drift,
+  .animate-spin-slow,
+  .animate-spin-slow-reverse {
+    animation: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .reveal-left,
+  .reveal-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
