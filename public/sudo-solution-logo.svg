@@ -1,0 +1,29 @@
+<svg width="860" height="260" viewBox="0 0 860 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">SUDO SOLUTION logo</title>
+  <desc id="logoDesc">Hexagonal S mark with SUDO SOLUTION wordmark</desc>
+
+  <defs>
+    <linearGradient id="brandBlue" x1="58" y1="20" x2="226" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1B8BE0" />
+      <stop offset="1" stop-color="#0F3B71" />
+    </linearGradient>
+    <linearGradient id="brandSlate" x1="58" y1="125" x2="226" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9EA8B5" />
+      <stop offset="1" stop-color="#3D4656" />
+    </linearGradient>
+  </defs>
+
+  <path d="M142 16L223 63V157L142 204L61 157V63L142 16Z" fill="url(#brandBlue)"/>
+  <path d="M142 58L187 84L187 126L142 152L97 126L97 84L142 58Z" fill="#F6FAFF"/>
+  <path d="M187 126L142 152L97 126V166L142 192L187 166V126Z" fill="url(#brandSlate)"/>
+  <path d="M108 108C108 94 122 86 142 86C159 86 174 94 178 105" stroke="#0F3B71" stroke-width="11" stroke-linecap="round"/>
+  <path d="M176 139C172 153 157 162 140 162C121 162 107 153 106 139" stroke="#2A3342" stroke-width="11" stroke-linecap="round"/>
+
+  <line x1="286" y1="40" x2="286" y2="220" stroke="#A8B6C8" stroke-width="2"/>
+
+  <text x="330" y="106" fill="#0F3B71" font-size="88" font-weight="800" letter-spacing="5" font-family="Segoe UI, Arial, sans-serif">SUDO</text>
+  <text x="330" y="166" fill="#2D3950" font-size="50" font-weight="700" letter-spacing="16" font-family="Segoe UI, Arial, sans-serif">SOLUTION</text>
+
+  <line x1="330" y1="186" x2="814" y2="186" stroke="#2A65A5" stroke-width="3"/>
+  <text x="330" y="226" fill="#205C9A" font-size="28" font-weight="700" letter-spacing="4" font-family="Segoe UI, Arial, sans-serif">SOLVE   INNOVATE   DELIVER</text>
+</svg>

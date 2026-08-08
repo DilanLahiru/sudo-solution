@@ -11,10 +11,10 @@ export default function Hero() {
         <div className="reveal-left">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#cbd7e2] bg-white/80 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-[#40536a]">
             <span className="h-1.5 w-1.5 rounded-full bg-[#1b8be0]" />
-            Engineering Since 2016
+            Engineering Since 2025
           </div>
 
-          <h1 className="font-display text-[2.65rem] font-bold leading-[1.02] tracking-[-0.02em] text-[#0d1723] sm:text-[4rem] lg:text-[4.55rem]">
+          <h1 className="font-display text-[2.65rem] font-bold leading-[1.02] tracking-[-0.02em] text-[#0d1723] sm:text-[4rem] lg:text-[3.55rem]">
             Digital Systems
             <br />
             <span className="text-[#0f3b71]">Built For Real-World</span>
@@ -45,13 +45,13 @@ export default function Hero() {
 
           <div className="mt-14 grid max-w-xl grid-cols-3 gap-6 border-t border-[#cfdbe5] pt-6">
             <div>
-              <p className="font-display text-2xl font-bold text-[#0d1723]">120+</p>
+              <p className="font-display text-2xl font-bold text-[#0d1723]">20+</p>
               <p className="mt-1 text-[12px] uppercase tracking-[0.08em] text-[#506177]">
                 Projects delivered
               </p>
             </div>
             <div>
-              <p className="font-display text-2xl font-bold text-[#0d1723]">9+</p>
+              <p className="font-display text-2xl font-bold text-[#0d1723]">1+</p>
               <p className="mt-1 text-[12px] uppercase tracking-[0.08em] text-[#506177]">
                 Years building
               </p>

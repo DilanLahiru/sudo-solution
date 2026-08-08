@@ -30,16 +30,16 @@ export default function CTASection() {
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
-              href="mailto:hello@sudosolution.com"
+              href="mailto:operation@sudosolution.lk"
               className="rounded-full bg-white px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.08em] text-[#12253a] transition-transform hover:-translate-y-0.5"
             >
-              hello@sudosolution.com
+              operation@sudosolution.lk
             </a>
             <a
-              href="tel:+94712487141"
+              href="tel:+94767661496"
               className="rounded-full border border-white/25 px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition-colors hover:border-white/60"
             >
-              (+94) 71 248 7141
+              (+94) 76 766 1496
             </a>
           </div>
         </div>

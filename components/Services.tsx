@@ -188,7 +188,7 @@ export default function Services() {
   return (
     <section ref={sectionRef} id="services" className="py-20 lg:py-28">
       <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[44px] border border-white/[0.08] bg-[linear-gradient(130deg,#2b352d_0%,#243127_43%,#26342a_100%)] px-6 py-9 sm:px-10 lg:px-14 lg:py-14">
+        <div className="relative overflow-hidden rounded-[44px] border border-white/[0.08] bg-[linear-gradient(130deg,#132233_0%,#0d1723_43%,#26342a_100%)] px-6 py-9 sm:px-10 lg:px-14 lg:py-14">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_62%_0%,rgba(93,107,163,0.35)_0%,transparent_36%)]" />
           <div className="pointer-events-none absolute inset-0 opacity-[0.18] [background-image:linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] [background-size:320px_100%,100%_160px]" />
           <div className="pointer-events-none absolute -bottom-28 left-[-8%] h-[320px] w-[140%] rounded-[100%] border border-white/[0.08]" />
@@ -196,16 +196,16 @@ export default function Services() {
           <div className="relative grid gap-8 lg:max-h-[calc(100vh-8rem)] lg:grid-cols-[1fr_1fr]">
             <div className="lg:sticky lg:top-24 lg:self-start">
               <div className="reveal-left max-w-[670px]">
-                <h2 className="font-display text-5xl font-bold leading-[0.98] tracking-[-0.02em] text-white sm:text-7xl">
+                <h2 className="font-display text-4xl font-bold leading-[0.98] tracking-[-0.02em] text-white sm:text-5xl">
                   What We Do
                 </h2>
-                <p className="mt-8 max-w-xl text-xl leading-[1.35] text-[rgb(157,171,188)] sm:text-4xl">
+                <p className="mt-8 max-w-xl text-lg leading-[1.35] text-[rgb(157,171,188)] sm:text-2xl">
                   Engineering excellence meets human-centric design. Our values
                   reflect in our results.
                 </p>
                 <a
                   href="#contact"
-                  className="mt-9 inline-flex items-center justify-center rounded-2xl border border-white/[0.18] bg-white/[0.08] px-9 py-4 font-mono text-[14px] font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/[0.14]"
+                  className="mt-9 inline-flex items-center justify-center rounded-2xl border border-white/[0.18] bg-white/[0.08] px-6 py-3 font-mono text-[12px] font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/[0.14]"
                 >
                   Talk To Us
                 </a>
@@ -233,7 +233,7 @@ export default function Services() {
                         <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-white/[0.48]">
                           {String(activeIndex + 1).padStart(2, "0")}
                         </p>
-                        <h3 className="mt-1 font-display text-[1.45rem] font-bold leading-tight tracking-tight text-white sm:text-[1.65rem]">
+                        <h3 className="mt-1 font-display text-[1.45rem] font-bold leading-tight tracking-tight text-white sm:text-[1.45rem]">
                           {activeService.title}
                         </h3>
                       </div>
@@ -282,16 +282,16 @@ export default function Services() {
                 >
                   <div className="flex items-center gap-6">
                     <NumberLabel n={i + 1} />
-                    <h3 className="font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] text-[#1f242c] sm:text-5xl">
+                    <h3 className="font-display text-3xl font-bold leading-[1.05] tracking-[-0.02em] text-[#1f242c] sm:text-4xl">
                       {title}
                     </h3>
                   </div>
 
                   <div className="mt-5 flex items-start gap-6">
-                    <div className="flex h-[92px] w-[92px] shrink-0 items-center justify-center rounded-[24px] bg-[#1f2126] shadow-[0_12px_18px_-14px_rgba(0,0,0,0.6)]">
-                      <Icon className="h-11 w-11 text-white" strokeWidth={1.85} />
+                    <div className="flex h-[80px] w-[80px] shrink-0 items-center justify-center rounded-[24px] bg-[#1f2126] shadow-[0_12px_18px_-14px_rgba(0,0,0,0.6)]">
+                      <Icon className="h-10 w-10 text-white" strokeWidth={1.85} />
                     </div>
-                    <p className="max-w-[640px] text-lg leading-[1.42] text-[#747982] sm:text-2xl">
+                    <p className="max-w-[640px] text-lg leading-[1.42] text-[#747982] sm:text-lg">
                       {copy}
                     </p>
                   </div>
@@ -300,7 +300,7 @@ export default function Services() {
                     {lines.map((line) => (
                       <span
                         key={`right-${title}-${line}`}
-                        className="rounded-full border border-[#e0e4ea] bg-[#eceff3] px-5 py-2 font-mono text-xs font-semibold uppercase tracking-[0.05em] text-[#70757e] sm:text-sm"
+                        className="rounded-full border border-[#e0e4ea] bg-[#eceff3] px-5 py-2 font-mono text-xs font-semibold uppercase tracking-[0.05em] text-[#70757e] sm:text-xs"
                       >
                         {line}
                       </span>
@@ -309,7 +309,7 @@ export default function Services() {
 
                   <a
                     href="#contact"
-                    className="mt-10 inline-flex items-center gap-4 font-mono text-sm font-semibold uppercase tracking-[0.1em] text-[#23272f] transition-colors hover:text-[#11151b] sm:text-base"
+                    className="mt-10 inline-flex items-center gap-4 font-mono text-sm font-semibold uppercase tracking-[0.1em] text-[#23272f] transition-colors hover:text-[#11151b] sm:text-sm"
                   >
                     Learn More
                     <ArrowRight className="h-5 w-5" strokeWidth={2.2} />
